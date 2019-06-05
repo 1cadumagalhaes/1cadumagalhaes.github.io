@@ -1,0 +1,35 @@
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.teste{
+  font-size: 300px;
+}
+
+.justify{
+  text-align: justify;
+}
+
+#index-banner{
+  height: 30em;
+}
+blockquote{
+  border-color: #01579b;
+}
+
+.skills ul li .progress .determinate .percent {
+  position: absolute;
+  top: -27px;
+  right: 0;
+  font-size: 13px;
+  color: #363636;
+  font-weight: 400;
+}
+
+.progress{
+  overflow: visible!important;
+}
