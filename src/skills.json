@@ -1,0 +1,78 @@
+{
+    "skills": [
+        {
+            "skill": "HTML5",
+            "percentage": "100%",
+            "icon": ""
+        },
+        {
+            "skill": "CSS3",
+            "percentage": "90%",
+            "icon": ""
+        },
+        {
+            "skill": "Javascript/Ecmascript",
+            "percentage": "100%",
+            "icon": ""
+        },
+        {
+            "skill": "Python",
+            "percentage": "80%",
+            "icon": ""
+        },
+        {
+            "skill": "SQL",
+            "percentage": "80%",
+            "icon": ""
+        },
+        {
+            "skill": "R",
+            "percentage": "10%",
+            "icon": ""
+        },
+        {
+            "skill": "Machine Learning",
+            "percentage": "20%",
+            "icon": ""
+        },
+        {
+            "skill": "Linux",
+            "percentage": "80%",
+            "icon": ""
+        },
+        {
+            "skill": "React",
+            "percentage": "40%",
+            "icon": ""
+        },{
+            "skill": "Java",
+            "percentage": "40%",
+            "icon": ""
+        },
+        {
+            "skill": "NodeJS",
+            "percentage": "95%",
+            "icon": ""
+        },
+        {
+            "skill": "PHP",
+            "percentage": "50%",
+            "icon": ""
+        },
+        {
+            "skill": "C",
+            "percentage": "60%",
+            "icon": ""
+        },
+        {
+            "skill": "C#",
+            "percentage": "60%",
+            "icon": ""
+        },
+        {
+            "skill": "IoT",
+            "percentage": "80%",
+            "icon": ""
+        }
+    ]
+}
