@@ -4,12 +4,12 @@
 <head>
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
-    w[l] = w[l] || []; w[l].push({
-      'gtm.start':
-        new Date().getTime(), event: 'gtm.js'
-    }); var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-K7NN6RX');</script>
   <!-- End Google Tag Manager -->
 
@@ -40,31 +40,33 @@
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">magalhaescarlos</a>
       <ul class="right hide-on-med-and-down">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+
+
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center">Hi, I'm Carlos</h1>
+      <h1 class="header center">Olá, eu sou o Cadu</h1>
 
       <div class="row center">
-        <h4 class="header col s12 light">UX/UI Designer, Developer, Maker and Data Engineer</h4>
+        <h4 class="header col s12 light">UX/UI Designer, Desenvolvedor, Maker e Engenheiro de dados</h4>
       </div>
 
       <div class="row center">
-        <a href="#" id="download-button" class="btn-large waves-effect waves-light light-blue darken-4">Saiba mais</a>
+        <a href="#sobre" id="download-button" class="btn-large waves-effect waves-light light-blue darken-4">Saiba mais</a>
       </div>
     </div>
 
@@ -72,30 +74,30 @@
 
 
   <div class="container section">
-    <div class="row">
+    <div class="row" id="sobre">
       <div class="card">
         <div class="card-content">
-          <span class="card-title">About me</span>
           <div class="row">
-            <div class="col s4">
-              <i class="material-icons" style="font-size: 8em">face</i>
+            <div class="col s12 l4" >
+              <img src="img/me.jpeg" alt="" class="profile">
             </div>
-            <div class="col s8">
+            <div class="col s12 l8">
               <p class="flow-text" style="text-align: justify">
-                Cool text about me here. Some lorem just to make the placeholder :
-                Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent
-                mediocritatem an, cule dicta iriure at.
+                Sou um nerd estudante de Microeletrônica, amante de ciências e apaixonado por desafios.
+                Por isso sou participante ativo de hackathons, onde atuo como dev e como ux,
+                além de ter a habilidade de ficar acordado sem precisar de litros de energético.
+                <br><br>No (pouco) tempo livre eu desenvolvo, estudo, leio e jogo videogame.
               </p>
             </div>
           </div>
         </div>
         <div class="row ">
-          <div class="col s12 l4">
+          <div class="col s12 l5">
             <blockquote>
-              <span class="flow-text">Name: Carlos Eduardo</span>
+              <span class="flow-text">Name: Carlos Magalhães</span>
             </blockquote>
           </div>
-          <div class="col s12 l4">
+          <div class="col s12 l3">
             <blockquote>
               <span class="flow-text">Age: 22</span>
             </blockquote>
@@ -108,22 +110,35 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="card">
-        <div class="card-content skills" id="skills">
-          <span class="card-title">My skills</span>
 
-
-        </div>
-      </div>
-    </div>
     <div class="row">
       <div class="card">
         <div class="card-content">
-          <span class="card-title"></span>
+          <span class="card-title">Conquistas</span>
+          <ul id="achievements"> 
+
+          </ul>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="card">
+        <div class="card-content skills" id="skills">
+          <span class="card-title">Minhas habilidades</span>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row" id="projetos">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Projetos</span>
+          <p>Ops! Essa parte ainda não foi implementada</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 
@@ -138,14 +153,18 @@
 
   <div class="fixed-action-btn">
     <a class="btn-floating btn-large blue-grey">
-      <i class="large material-icons">mode_edit</i>
+      <i class="large material-icons">email</i>
     </a>
 
     <ul>
-      <li><a class=" btn-floating  red accent-2" href="https://instagram.com/srcarlosedum" target="_blank"> <i class="fab fa-instagram"></i> </a></li>
-      <li><a class=" btn-floating blue" href="https://twitter.com/srcarlosedum/" target="_blank"> <i class="fab fa-twitter-square"></i> </a></li>
-      <li><a class=" btn-floating deep-purple accent-1" href="https://github.com/magalhaescarlos" target="_blank"> <i class="fab fa-github"></i> </a></li>
-      <li><a class=" btn-floating blue" href="https://linkedin.com/in/carlosedum/" target="_blank"> <i class="fab fa-linkedin"></i> </a></li>
+      <li><a class=" btn-floating  red accent-2" href="https://instagram.com/magalhaescarlosedu" target="_blank"> <i
+            class="fab fa-instagram"></i> </a></li>
+      <li><a class=" btn-floating blue" href="https://twitter.com/1cadumagalhaes/" target="_blank"> <i
+            class="fab fa-twitter-square"></i> </a></li>
+      <li><a class=" btn-floating deep-purple accent-1" href="https://github.com/magalhaescarlos" target="_blank">
+          <i class="fab fa-github"></i> </a></li>
+      <li><a class=" btn-floating blue" href="https://linkedin.com/in/carlosedum/" target="_blank"> <i
+            class="fab fa-linkedin"></i> </a></li>
     </ul>
   </div>
 

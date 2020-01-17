@@ -11,7 +11,7 @@
             "icon": ""
         },
         {
-            "skill": "Javascript/Ecmascript",
+            "skill": "Javascript",
             "percentage": "100%",
             "icon": ""
         },
@@ -26,11 +26,6 @@
             "icon": ""
         },
         {
-            "skill": "R",
-            "percentage": "10%",
-            "icon": ""
-        },
-        {
             "skill": "Machine Learning",
             "percentage": "20%",
             "icon": ""
@@ -41,11 +36,7 @@
             "icon": ""
         },
         {
-            "skill": "React",
-            "percentage": "40%",
-            "icon": ""
-        },{
-            "skill": "Java",
+            "skill": "Flutter",
             "percentage": "40%",
             "icon": ""
         },
@@ -61,11 +52,6 @@
         },
         {
             "skill": "C",
-            "percentage": "60%",
-            "icon": ""
-        },
-        {
-            "skill": "C#",
             "percentage": "60%",
             "icon": ""
         },

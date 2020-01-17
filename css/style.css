@@ -1,23 +1,19 @@
-
 .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
-	font-size: inherit;
+  font-size: inherit;
 }
 
-.teste{
+.teste {
   font-size: 300px;
 }
 
-.justify{
+.justify {
   text-align: justify;
 }
 
-#index-banner{
-  height: 30em;
-}
-blockquote{
+blockquote {
   border-color: #01579b;
 }
 
@@ -30,6 +26,60 @@ blockquote{
   font-weight: 400;
 }
 
-.progress{
-  overflow: visible!important;
+.progress {
+  overflow: visible !important;
+}
+
+.card ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flexitem {
+  flex: 1 1 auto;
+}
+
+.img-card {
+  height: 200px;
+  width: 200px!important;
+  border-radius: 100%!important;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.achiev{
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+
+#achievements .card{
+  width: max-content!important;
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+
+
+img.profile{
+  max-width: 70%;
+  border-radius: 50%;
+  margin: 25% 0;
+  display: block;
+}
+
+h1.header.center{
+  margin-bottom: 150px;
+}
+
+#sobre{
+  margin-top: 50px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  img.profile {
+    margin: 15%;
+  }
 }
