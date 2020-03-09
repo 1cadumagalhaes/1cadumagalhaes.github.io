@@ -61,6 +61,20 @@ blockquote {
   margin-right: auto!important;
 }
 
+#projects .card{
+  width: 250px!important;
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+
+#projects {
+  margin-top: -150px;
+  padding-bottom: 600px;
+}
+#achievements {
+  margin-top: -150px;
+  padding-bottom: 450px;
+}
 
 img.profile{
   max-width: 70%;
@@ -81,5 +95,18 @@ h1.header.center{
 @media only screen and (max-width: 600px) {
   img.profile {
     margin: 15%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #projects {
+    margin-top: -150px;
+    padding-bottom: 600px;
+    margin-left: -50px;
+  }
+  #achievements {
+    margin-top: -150px;
+    padding-bottom: 450px;
+    margin-left: -50px;
   }
 }

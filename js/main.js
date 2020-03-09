@@ -44,7 +44,7 @@ $.getJSON('src/achievements.json', function (data) {
   });
 
   $.each(achievements, function (k, a) {
-    var item = '<li class="col s12 m4 achiev">'
+    var item = '<div class="col s12 m4 achiev carousel-item">'
       + '<div class="card">'
       + '<div class="card-image">'
       + ' <img src="' + a.image + '" alt="" class="img-card">'
@@ -55,13 +55,44 @@ $.getJSON('src/achievements.json', function (data) {
       + '<p>' + a.subtitle + '</p>'
       + '</div>'
       + '</div>'
-      + '</li>';
+      + '</div>';
 
     items.push(item);
   });
 
-  $("<ul/>", {
-    html: items.join("")
-  }).appendTo("#achievements")
+  $('#achievements').html(items.join(""));
 
+});
+
+$.getJSON('src/projects.json', function (data) {
+  var items = [];
+  var projects = [];
+
+  $.each(data['projects'], function (key, v) {
+    var project = {
+      "title": v.title,
+      "subtitle": v.subtitle,
+      "image": v.image,
+      "url": v.url
+    }
+    projects.push(project);
+  });
+
+  $.each(projects, function (k, a) {
+    var item = '<div class="col s12 m4 project carousel-item">'
+      + '<div class="card">'
+      + '<div class="card-image">'
+      + ' <img src="' + a.image + '" alt="" class="img-card">'
+      + '<a class="btn-floating halfway-fab waves-effect waves-light red" href="' + a.url + '" target="_blank"><i class="material-icons">add</i></a>'
+      + '</div>'
+      + '<div class="card-content">'
+      + '<span class="card-title">' + a.title + '</span>'
+      + '<p>' + a.subtitle + '</p>'
+      + '</div>'
+      + '</div>'
+      + '</div>';
+
+    items.push(item);
+  });
+  $('#projects').html(items.join(""));
 });

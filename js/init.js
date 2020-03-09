@@ -3,6 +3,11 @@
 
     $('.sidenav').sidenav();
 
+    setTimeout(function(){
+      $('.carousel').carousel();
+      clearTimeout();
+    }, 200);
+    
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
@@ -13,4 +18,5 @@ $(document).ready(function(){
     e.preventDefault();
   }
   );*/
+  
 });

@@ -1,0 +1,40 @@
+{
+    "projects": [
+        {
+            "title": "UberMais",
+            "subtitle": "Project developed at the Uber Hack SP",
+            "image": "/img/holder.png",
+            "url":"https://magalhaescarlos.github.io/uberhack-infinity"
+        },
+        {
+            "title": "Smart Parking",
+            "subtitle": "Landing page to our project developped to the Schneider's Go Green In The City 2019.",
+            "image": "/img/holder.png",
+            "url":"https://magalhaescarlos.github.io/smart-parking"
+        },
+        {
+            "title": "Lorena Tech",
+            "subtitle": "Projeto desenvolvido para o #LoftechHackathon. Chatbot feito com DialogFlow",
+            "image": "/img/holder.png",
+            "url":"https://magalhaescarlos.github.io/lorena-tech"
+        },
+        {
+            "title": "Bash Scripts",
+            "subtitle": "Collection of linux bash scripts to prepare environment",
+            "image": "/img/holder.png",
+            "url":"https://github.com/magalhaescarlos/bash-scripts"
+        },
+        {
+            "title": "Super TSheets",
+            "subtitle": "Chrome extension to use tsheets and add more features",
+            "image": "/img/holder.png",
+            "url":"https://github.com/magalhaescarlos/super_tsheets"
+        },
+        {
+            "title": "GCP Functions",
+            "subtitle": "Coleção de funções em javascript (node 10) usando a biblioteca de API da Google Cloud Platform em diversos produtos",
+            "image": "/img/holder.png",
+            "url":"https://github.com/magalhaescarlos/GCP-Functions"
+        }
+    ]
+}
