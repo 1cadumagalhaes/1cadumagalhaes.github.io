@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!--TODO Add meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sobre meu site. Aqui você encontrará meus projetos e alguns conteúdos relacionados a tecnologia.">
+    <title>Sobre - 1cadumagalhaes</title>
+    <link rel="icon" href="../img/icon_black_shadow.webp">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar primary-color shadow fixed row text-bg">
+            <div class="container row justify-around">
+
+                <span class="icon" onclick="responsive()">
+                    <em class="fa fa-bars"></em>
+                </span>
+                <a href="../">
+                    <h1 class="logo">1cadumagalhaes</h1>
+                </a>
+                <div></div>
+                <ul class="nav row" id="topnav">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#" class="active">Sobre</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li>
+                        <span>
+                            <em class="fa fa-sun-o icons"></em>
+                            <label class="switch">
+                                <input type="checkbox" name="" id="dark-switch" onclick="darkMode();"
+                                    aria-label=" dark mode">
+                                <span class="slider round"></span>
+                            </label>
+                            <em class="fa fa-moon-o icons"></em>
+                        </span>
+
+                    </li>
+                </ul>
+                <span class="closebtn icon" id="closebtn" onclick="responsive()"><em class="fa fa-times"></em></span>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="column primary-color light banner text-color">
+            <img src="../img/icon_white_shadow.webp" alt="cadumagalhaes logo" width="200" height="200">
+            <h2>Apaixonado por resolver problemas</h2>
+        </div>
+        <div class="column">
+            <section id="about" class="column container">
+                <div class="row foto">
+                    <img class="profile" src="../img/cadu.png" alt="my picture" width="210" height="210" loading="lazy">
+                </div>
+                <h2>Sobre mim</h2>
+                <div class="card column justify-around shadow body-bg text-bg" id="infos-card">
+                    <div class="row justify-between">
+                        <blockquote>
+                            <p class="flow-text">Cadu Magalhães</p>
+                        </blockquote>
+                        <blockquote>
+                            <p class="flow-text">24 anos</p>
+                        </blockquote>
+                        <blockquote>
+                            <p class="flow-text">Data Engineer</p>
+                        </blockquote>
+                    </div>
+                    <div class="row icons">
+                        <a href="https://www.instagram.com/1cadumagalhaes" aria-label="instagram"><em
+                                class="icon fa fa-instagram"></em></a>
+                        <a href="https://www.twitter.com/1cadumagalhaes" aria-label="twitter"><em
+                                class="icon fa fa-twitter"></em></a>
+                        <a href="https://www.github.com/1cadumagalhaes" aria-label="github"><em
+                                class="icon fa fa-github"></em></a>
+                        <a href="https://www.linkedin.com/1cadumagalhaes" aria-label="linkedin"><em
+                                class="icon fa fa-linkedin"></em></a>
+                    </div>
+                </div>
+                <p class="flow-text">
+                    Atualmente trabalho como Engenheiro de dados na <a
+                        href="https://dp6.com.br?utm_source=colaborador&utm_medium=cadu">DP6</a>, onde atuo com
+                    análises de performance, implementação de coleta de dados, arquitetura de projetos em Cloud e
+                    desenvolvimento de processos de ETL.
+                </p>
+                <p class="flow-text">
+                    Lá me especializei em Google Analytics, principalmente para Ecommerces, e em Google Cloud Platform.
+                </p>
+                <div class="row">
+                    <div class="card column certification shadow body-bg text-bg">
+                        <img class="certification" src="../img/ga.png"
+                            alt="google analytics individual qualification logo" width="100px" height="100px">
+                        <p class="flow-text">
+                            Google Analytics Individual Qualification
+                        </p>
+                    </div>
+                    <div class="card column certification shadow body-bg text-bg">
+                        <img class="certification" src="../img/gcp-pa.png"
+                            alt="google cloud professional architect logo" width="100px" height="100px">
+                        <p class="flow-text">
+                            Google Cloud Professional Cloud Architect
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="programming" class="column container">
+                <p class="flow-text">
+                    Aprendi a programar em Java aos 15 anos, e desde então estudei HTML, CSS, C#, C, C++, Python, Dart e
+                    hoje minha linguagem principal é Javascript.
+                    <br><br>
+                    No momento sou entusiasta de Flutter, que tem sido meu framework preferido para desenvolver
+                    aplicativos,
+                    e
+                    geralmente faço o back-end utilizando NodeJS.
+                </p>
+                <p class="flow-text">
+                    Também estudei UX/UI Design, desenvolvimento de produtos com base em Design Thinking, e modelagem de
+                    negócios.
+                </p>
+            </section>
+            <section id="consultoria" class="column container">
+                <h2>Sobre este projeto</h2>
+                <p class="flow-text">
+                    Desde os primeiros trabalhos no ensino técnico tive vontade de ter minha própria empresa.
+                    <br>
+                    Foi aí que idealizei meus primeiros negócios: NerdCoders, NerdDesig, dentre outros. Essas "empresas"
+                    me
+                    inspiraram a criar a NerdCorp, que ainda não saiu do papel.
+                </p>
+                <p class="flow-text">
+                    Enquanto isso, decidi trabalhar como <strong>Consultor em Tecnologia</strong>.
+                    Minha ideia é oferecer:
+                    <br>
+                </p>
+                <div class="row" id="services">
+
+                    <div class="collection shadow flow-text">
+                        <a href="#!" class="collection-item">Desenvolvimento de software</a>
+                        <a href="#!" class="collection-item">Criação de automações industriais e residenciais</a>
+                        <a href="#!" class="collection-item">Consultoria em Hardware</a>
+                        <a href="#!" class="collection-item">Arquitetura em Cloud</a>
+                    </div>
+                </div>
+
+                <p class="flow-text">
+                    Em paralelo, estou criando o nerdie.dev para produzir posts e vídeos de tecnologia, além de fazer
+                    lives
+                    na Twitch.
+                </p>
+            </section>
+            <div></div>
+            <div></div>
+        </div>
+
+    </main>
+
+    <footer class="footer column primary-color shadow">
+        <div class="container">
+            <div class="row">
+                <div class="">
+                    <img src="../img/icon_white_shadow.webp" alt="cadumagalhaes logo" width="50" height="50">
+                </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/1cadumagalhaes" aria-label="instagram"><em
+                            class="icon fa fa-instagram"></em></a>
+                    <a href="https://www.twitter.com/1cadumagalhaes" aria-label="twitter"><em
+                            class="icon fa fa-twitter"></em></a>
+                    <a href="https://www.github.com/1cadumagalhaes" aria-label="github"><em
+                            class="icon fa fa-github"></em></a>
+                    <a href="https://www.linkedin.com/1cadumagalhaes" aria-label="linkedin"><em
+                            class="icon fa fa-linkedin"></em></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    <a href="http://github.com/1cadumagalhaes" style="text-decoration: none;">@1cadumagalhaes</a>
+                    &nbsp; &nbsp; &nbsp;
+                <p id="year">2020</p>
+                </p>
+
+            </div>
+        </div>
+    </footer>
+    <script src="../js/navbar.js">
+    </script>
+    <script src="../js/main.js">
+    </script>
+    <link rel="preload" as="style"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        onload="this.rel='stylesheet'" />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,latin-ext&display=swap"
+        onload="this.rel='stylesheet'">
+
+</body>
+
+</html>

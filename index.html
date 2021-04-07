@@ -1,182 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-K7NN6RX');</script>
-  <!-- End Google Tag Manager -->
-
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <title>@1cadumagalhaes</title>
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link rel="icon" href="img/icon_black_shadow.png">
-  <!--Fonts awesome-->
-  <script src="https://kit.fontawesome.com/1ebd89af92.js"></script>
-
-
-
+    <!--TODO Add meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Página principal do meu site. Aqui você encontrará meus projetos e alguns conteúdos relacionados a tecnologia.">
+    <title>1cadumagalhaes</title>
+    <link rel="icon" href="./img/icon_black_shadow.webp">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7NN6RX" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <nav class="light-blue darken-4" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">1cadumagalhaes</a>
-      <ul class="right hide-on-med-and-down">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="/blog">Blog</a></li>
-      </ul>
+    <header>
+        <nav class="navbar primary-color shadow fixed row text-bg">
+            <div class="container row justify-around">
 
-      <ul id="nav-mobile" class="sidenav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="/blog">Blog</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+                <span class="icon" onclick="responsive()">
+                    <em class="fa fa-bars"></em>
+                </span>
+                <a href="/">
+                    <h1 class="logo">1cadumagalhaes</h1>
+                </a>
+                <div></div>
+                <ul class="nav row" id="topnav">
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="/sobre/">Sobre</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li>
+                        <span>
+                            <em class="fa fa-sun-o icons"></em>
+                            <label class="switch">
+                                <input type="checkbox" name="" id="dark-switch" onclick="darkMode();"
+                                    aria-label=" dark mode">
+                                <span class="slider round"></span>
+                            </label>
+                            <em class="fa fa-moon-o icons"></em>
+                        </span>
 
+                    </li>
+                </ul>
+                <span class="closebtn icon" id="closebtn" onclick="responsive()"><em class="fa fa-times"></em></span>
 
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center">Olá, eu sou o Cadu</h1>
-
-      <div class="row center">
-        <h4 class="header col s12 light">UX/UI Designer, Desenvolvedor, Maker e Engenheiro de dados</h4>
-      </div>
-
-      <div class="row center">
-        <a href="#sobre" id="download-button" class="btn-large waves-effect waves-light light-blue darken-4">Saiba
-          mais</a>
-      </div>
-    </div>
-
-  </div>
-
-
-  <div class="container section">
-    <div class="row" id="sobre">
-      <div class="card">
-        <div class="card-content">
-          <div class="row">
-            <div class="col s12 l4">
-              <img src="img/me.jpeg" alt="" class="profile">
             </div>
-            <div class="col s12 l8">
-              <p class="flow-text" style="text-align: justify">
-                Sou um nerd estudante de Microeletrônica, amante de ciências e apaixonado por desafios.
-                Por isso sou participante ativo de hackathons, onde atuo como dev e como ux,
-                além de ter a habilidade de ficar acordado sem precisar de litros de energético.
-                <br><br>No (pouco) tempo livre eu desenvolvo, estudo, leio e jogo videogame.
-              </p>
+
+        </nav>
+    </header>
+    <main>
+        <div class="column" id="banner">
+
+            <h1>Olá, eu sou o Cadu</h1>
+            <h2>Desenvolvedor, Maker e Engenheiro de Dados</h2>
+        </div>
+        <div class="row" id="card-about">
+            <div class="card column justify-around shadow body-bg" id="about-card">
+                <div class="row justify-between">
+                    <blockquote>
+                        <p class="flow-text">Cadu Magalhães</p>
+                    </blockquote>
+                    <blockquote>
+                        <p class="flow-text">24 anos</p>
+                    </blockquote>
+                    <blockquote>
+                        <p class="flow-text">Data Engineer</p>
+                    </blockquote>
+                </div>
+                <div class="row align-between">
+                    <div class="foto">
+                        <img class="profile" src="./img/me.webp" alt="my picture" width="210" height="210"
+                            loading="lazy">
+                    </div>
+                    <div class="descricao">
+                        <p class="flow-text">
+                            Sou um nerd estudante de Microeletrônica, amante de ciências e apaixonado por desafios.
+                            Por isso sou participante ativo de hackathons, onde atuo como dev e como ux,
+                            além de ter a habilidade de ficar acordado sem precisar de litros de energético.
+                            <br><br>No (pouco) tempo livre eu desenvolvo, estudo, leio e jogo videogame.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <a class="button btn-large shadow" href="#">Saiba mais</a>
+                    </div>
+
+                </div>
             </div>
-          </div>
         </div>
-        <div class="row ">
-          <div class="col s12 l5">
-            <blockquote>
-              <span class="flow-text">Name: Carlos Magalhães</span>
-            </blockquote>
-          </div>
-          <div class="col s12 l3">
-            <blockquote>
-              <span class="flow-text">Age: 23</span>
-            </blockquote>
-          </div>
-          <div class="col s12 l4">
-            <blockquote>
-              <span class="flow-text">Job: Data Engineer</span>
-            </blockquote>
-          </div>
+        <div class="row">
+            <div class="column justify-around body-bg" id="projects-card">
+                <div class="row center">
+                    <h2>Alguns dos meus projetos</h2>
+                </div>
+                <div class="carousel-wrapper column">
+
+                    <input type="radio" name="position" value="project1" />
+                    <input type="radio" name="position" value="project2" />
+                    <input type="radio" name="position" value="project3" checked />
+                    <input type="radio" name="position" value="project4" />
+                    <input type="radio" name="position" value="project5" />
+
+                    <div class="row">
+                        <div class="arrow">
+                            <a class="prev" onclick="navSlide(-1)">&#10094;</a>
+                        </div>
+                        <div class="card-carousel">
+                        </div>
+
+                        <div class="arrow">
+                            <a class="next" onclick="navSlide(1)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </main>
 
-    <div class="row">
-      <div class="card">
-        <div class="card-content">
-          <span class="card-title">Conquistas</span>
-          <div class="carousel "id="achievements">
+    <footer class="footer column primary-color shadow">
+        <div class="container">
+            <div class="row">
+                <div class="">
+                    <img src="./img/icon_white_shadow.webp" alt="cadumagalhaes logo" width="50" height="50">
+                </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/1cadumagalhaes" aria-label="instagram"><em
+                            class="icon fa fa-instagram"></em></a>
+                    <a href="https://www.twitter.com/1cadumagalhaes" aria-label="twitter"><em
+                            class="icon fa fa-twitter"></em></a>
+                    <a href="https://www.github.com/1cadumagalhaes" aria-label="github"><em
+                            class="icon fa fa-github"></em></a>
+                    <a href="https://www.linkedin.com/1cadumagalhaes" aria-label="linkedin"><em
+                            class="icon fa fa-linkedin"></em></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    <a href="http://github.com/1cadumagalhaes" style="text-decoration: none;">@1cadumagalhaes</a>
+                    &nbsp; &nbsp; &nbsp;
+                <p id="year">2020</p>
+                </p>
 
-          </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="card">
-        <div class="card-content skills" id="skills">
-          <span class="card-title">Minhas habilidades</span>
+    </footer>
+    <script src="js/navbar.js">
+    </script>
+    <script src="js/main.js">
+    </script>
+    <link rel="preload" as="style"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        onload="this.rel='stylesheet'" />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,latin-ext&display=swap"
+        onload="this.rel='stylesheet'">
 
-
-        </div>
-      </div>
-    </div>
-    <div class="row" id="projetos">
-      <div class="card">
-        <div class="card-content">
-          <span class="card-title">Projetos</span>
-          <div class="carousel" id="projects">
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-
-  <footer class="page-footer light-blue darken-4">
-    <div class="footer-copyright">
-      <div class="container section">
-        Made by <a class="orange-text text-lighten-3" href="https://github.com/1cadumagalhaes">@1cadumagalhaes</a>
-      </div>
-    </div>
-  </footer>
-
-  <div class="fixed-action-btn">
-    <a class="btn-floating btn-large blue-grey">
-      <i class="large material-icons">email</i>
-    </a>
-
-    <ul>
-      <li><a class=" btn-floating  red accent-2" href="https://instagram.com/magalhaescarlosedu" target="_blank"> <i
-            class="fab fa-instagram"></i> </a></li>
-      <li><a class=" btn-floating blue" href="https://twitter.com/1cadumagalhaes/" target="_blank"> <i
-            class="fab fa-twitter-square"></i> </a></li>
-      <li><a class=" btn-floating deep-purple accent-1" href="https://github.com/1cadumagalhaes" target="_blank">
-          <i class="fab fa-github"></i> </a></li>
-      <li><a class=" btn-floating blue" href="https://linkedin.com/in/carlosedum/" target="_blank"> <i
-            class="fab fa-linkedin"></i> </a></li>
-    </ul>
-  </div>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/main.js"></script>
+    <script src="./js/carousel.js">
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,95 @@
+.carousel-wrapper {
+    height: 800px;
+    margin: 0;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 200px;
+}
+
+.card-carousel {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    width: 70vw;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    --items: 5;
+    --middle: 3;
+    --position: 3;
+}
+
+.card-carousel .item {
+    position: absolute;
+    width: 300px;
+    height: 700px;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r)))
+        translateX(calc(-300px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+}
+
+.card-carousel .item:nth-of-type(1) {
+    --offset: 1;
+}
+.card-carousel .item:nth-of-type(2) {
+    --offset: 2;
+}
+.card-carousel .item:nth-of-type(3) {
+    --offset: 3;
+}
+.card-carousel .item:nth-of-type(4) {
+    --offset: 4;
+}
+.card-carousel .item:nth-of-type(5) {
+    --offset: 5;
+}
+
+input:nth-of-type(1):checked ~ .row .card-carousel {
+    --position: 1;
+}
+input:nth-of-type(2):checked ~ .row .card-carousel {
+    --position: 2;
+}
+input:nth-of-type(3):checked ~ .row .card-carousel {
+    --position: 3;
+}
+input:nth-of-type(4):checked ~ .row .card-carousel {
+    --position: 4;
+}
+
+input:nth-of-type(5):checked ~ .row .card-carousel {
+    --position: 5;
+}
+
+.arrow {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow a {
+    height: 100%;
+    width: 100%;
+    line-height: 50;
+}
+
+input[name='position'] {
+    display: none;
+}
+
+.card-carousel .item * {
+    min-width: 100px;
+    pointer-events: none;
+}
+
+.carousel-wrapper .row {
+    flex-flow: row !important;
+}

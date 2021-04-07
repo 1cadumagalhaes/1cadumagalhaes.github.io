@@ -1,0 +1,73 @@
+#infos-card {
+    min-height: 100px;
+}
+
+.flow-text {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 10px;
+}
+
+.card.icons,
+.icons a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--text-on-body);
+}
+
+.foto {
+    max-height: 300px;
+}
+
+img.certification {
+    max-width: 100%;
+    border-radius: 50%;
+    display: block;
+}
+
+.card.certification {
+    min-width: 100px;
+    max-width: 180px;
+    padding: 10px 10px !important;
+}
+
+.card.certification p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.collection {
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+}
+
+.collection .collection-item {
+    background-color: var(--card);
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom: 1px solid var(--shadow);
+}
+
+.collection a.collection-item {
+    display: block;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.collection a.collection-item:hover {
+    background-color: var(--shadow);
+}
+
+#services {
+    max-width: 70%;
+}
+
+.light.banner {
+    background-color: var(--banner);
+}

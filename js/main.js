@@ -1,98 +1,52 @@
-$.getJSON('src/skills.json', function (data) {
-  var items = [];
-  var skills = [];
+var $ = function (...args) {
+    var t = document.querySelectorAll(...args);
+    if (t.length == 1) return t[0];
+    return t
+};
 
-  $.each(data['skills'], function (key, v) {
-    var skill = {
-      "skill": v.skill,
-      "percentage": v.percentage
+
+function toggleClass(element, className) {
+    var classes;
+    if (typeof element === 'string')
+        classes = document.getElementById(element).classList;
+    else classes = element.classList;
+    classes.toggle(className);
+}
+
+
+function navSlide(value = 1, auto = false) {
+    var t = +$('input[name="position"]:checked').value.match(/(\d+)/)[0];
+    t = t + value
+    if (t === 6) $('input[value="project1"]').click();
+    else if (t === 0) $('input[value="project5"]').click();
+    else $('input[value="project' + t + '"]').click();
+    if (!auto)
+        clearInterval(intervalId)
+    return true;
+}
+
+document.addEventListener("DOMContentLoaded", function (event) {
+
+    var darkmode = window.localStorage.getItem('dark-mode');
+    if (darkmode === null) {
+        window.localStorage.setItem('dark-mode', darkmodestate);
     }
-    skills.push(skill);
-  });
+    darkmode = darkmode === 'true';
+    if (darkmodestate != darkmode) {
+        darkMode();
+        $('#dark-switch').checked = darkmode;
+    }
 
-  $.each(skills, function (k, skill) {
-    var item = '<li class="col s12 l4">'
-      + '<blockquote>'
-      + '<p class="flow-text">' + skill.skill + '</p>'
-      + '<div class="progress grey lighten-2">'
-      + '<div class="determinate light-blue darken-4" style="width: ' + skill.percentage + '"></div>'
-      + '</div>'
-      + '</blockquote>'
-      + '</li>';
-    items.push(item);
-  });
-
-  $("<ul/>", {
-    html: items.join("")
-  }).appendTo("#skills")
-
+    $("#year").innerText = new Date().getFullYear()
+    touchHandler('.nav', 'direction', function (dir) { if (dir > 0) responsive() });
+    touchHandler('body', 'position', function (start, direction) {
+        if (start <= 30 && direction == -1) responsive()
+    });
 });
 
 
-$.getJSON('src/achievements.json', function (data) {
-  var items = [];
-  var achievements = [];
 
-  $.each(data['achievements'], function (key, v) {
-    var achievement = {
-      "title": v.title,
-      "subtitle": v.subtitle,
-      "image": v.image,
-      "url": v.url
-    }
-    achievements.push(achievement);
-  });
 
-  $.each(achievements, function (k, a) {
-    var item = '<div class="col s12 m4 achiev carousel-item">'
-      + '<div class="card">'
-      + '<div class="card-image">'
-      + ' <img src="' + a.image + '" alt="" class="img-card">'
-      + '<a class="btn-floating halfway-fab waves-effect waves-light red" href="' + a.url + '" target="_blank"><i class="material-icons">add</i></a>'
-      + '</div>'
-      + '<div class="card-content">'
-      + '<span class="card-title">' + a.title + '</span>'
-      + '<p>' + a.subtitle + '</p>'
-      + '</div>'
-      + '</div>'
-      + '</div>';
 
-    items.push(item);
-  });
 
-  $('#achievements').html(items.join(""));
 
-});
-
-$.getJSON('src/projects.json', function (data) {
-  var items = [];
-  var projects = [];
-
-  $.each(data['projects'], function (key, v) {
-    var project = {
-      "title": v.title,
-      "subtitle": v.subtitle,
-      "image": v.image,
-      "url": v.url
-    }
-    projects.push(project);
-  });
-
-  $.each(projects, function (k, a) {
-    var item = '<div class="col s12 m4 project carousel-item">'
-      + '<div class="card">'
-      + '<div class="card-image">'
-      + ' <img src="' + a.image + '" alt="" class="img-card">'
-      + '<a class="btn-floating halfway-fab waves-effect waves-light red" href="' + a.url + '" target="_blank"><i class="material-icons">add</i></a>'
-      + '</div>'
-      + '<div class="card-content">'
-      + '<span class="card-title">' + a.title + '</span>'
-      + '<p>' + a.subtitle + '</p>'
-      + '</div>'
-      + '</div>'
-      + '</div>';
-
-    items.push(item);
-  });
-  $('#projects').html(items.join(""));
-});
