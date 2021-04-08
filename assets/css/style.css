@@ -27,7 +27,10 @@ body {
     min-height: 100vh;
 }
 
-main,
+main {
+    font-weight: 300;
+}
+
 main h1,
 main h2 {
     font-weight: 500;
