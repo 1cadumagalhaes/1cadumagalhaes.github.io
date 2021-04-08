@@ -1,0 +1,86 @@
+#form-contato {
+    width: 500px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+#form-contato button {
+    flex: 1;
+}
+
+/* Estrutura */
+.input-container {
+    position: relative;
+    flex: 1;
+    margin: 10px 0;
+}
+
+.input-container input,
+.input-container textarea {
+    border: 0;
+    border-bottom: 2px solid var(--shadow);
+    outline: none;
+    transition: 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.input-container label {
+    top: 0;
+    left: 10px;
+    right: 0;
+    color: var(--text-on-body);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 1rem;
+    cursor: text;
+    transition: 0.2s ease-in-out;
+    box-sizing: border-box;
+
+    pointer-events: none;
+}
+
+.input-container input,
+.input-container label {
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+    color: var(--text-on-body);
+}
+.input-container textarea {
+    width: 100%;
+    font-size: 1rem;
+
+    color: var(--text-on-body);
+}
+
+/* Interation */
+.input-container input:valid,
+.input-container input:focus,
+.input-container textarea:focus {
+    border-bottom: 2px solid var(--primary);
+}
+
+.input-container input:valid + label,
+.input-container input:focus + label,
+.input-container textarea:focus + label,
+.input-container textarea:valid + label {
+    color: var(--primary);
+    font-size: 0.8rem;
+    top: -30px;
+    pointer-events: none;
+}
+
+.dark-mode .input-container input,
+.dark-mode .input-container textarea {
+    background-color: var(--card);
+}
+
+.horizontal-banner {
+    height: 700px;
+    width: 400px;
+}
+
+.light.horizontal-banner {
+    background-color: var(--banner);
+}

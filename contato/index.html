@@ -1,4 +1,35 @@
 ---
 title: Contato
 layout: default
+customcss: sim
+css: contact
+customjs: sim
+js: contact
 ---
+
+<section class="row justify-between">
+    <form id="form-contato" onsubmit="return sendForm();" class="card column">
+        <h2>Contato</h2>
+        <div class="row input-container">
+            <input type="text" class="input" name="name" pattern=".+" required />
+            <label class="label" for="name">Seu nome:</label>
+        </div>
+        <div class="row input-container">
+            <input type="email" name="email" pattern=".+@.+\..+" required />
+            <label class="label" for="email">Seu email:</label>
+        </div>
+        <div class="row input-container">
+            <textarea name="message" pattern=".+" required></textarea>
+            <label class="label" for="message">Sua mensagem:</label>
+        </div>
+
+        <!-- your other form fields go here -->
+        <div class="row">
+
+            <button type="submit" class="button">Send</button>
+        </div>
+    </form>
+    <div class="column horizontal-banner primary-color light">
+        <img src="/assets/img/icon_white_shadow.webp" alt="cadumagalhaes logo" width="200" height="200">
+    </div>
+</section>
