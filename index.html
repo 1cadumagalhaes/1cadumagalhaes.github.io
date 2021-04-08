@@ -1,174 +1,73 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+---
+title: 1cadumagalhaes
+layout: default
+customjs: sim
+js: carousel
+---
 
-<head>
-    <!--TODO Add meta tags-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Página principal do meu site. Aqui você encontrará meus projetos e alguns conteúdos relacionados a tecnologia.">
-    <title>1cadumagalhaes</title>
-    <link rel="icon" href="./img/icon_black_shadow.webp">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+<div class="column" id="banner">
 
-<body>
-    <header>
-        <nav class="navbar primary-color shadow fixed row text-bg">
-            <div class="container row justify-around">
-
-                <span class="icon" onclick="responsive()">
-                    <em class="fa fa-bars"></em>
-                </span>
-                <a href="/">
-                    <h1 class="logo">1cadumagalhaes</h1>
-                </a>
-                <div></div>
-                <ul class="nav row" id="topnav">
-                    <li><a href="/" class="active">Home</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="/sobre/">Sobre</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li>
-                        <span>
-                            <em class="fas fa-sun icons"></em>
-                            <label class="switch">
-                                <input type="checkbox" name="" id="dark-switch" onclick="darkMode();"
-                                    aria-label=" dark mode">
-                                <span class="slider round"></span>
-                            </label>
-                            <em class="fas fa-moon icons"></em>
-                        </span>
-
-                    </li>
-                </ul>
-                <span class="closebtn icon" id="closebtn" onclick="responsive()"><em class="fa fa-times"></em></span>
-
-            </div>
-
-        </nav>
-    </header>
-    <main>
-        <div class="column" id="banner">
-
-            <h1>Olá, eu sou o Cadu</h1>
-            <h2>Desenvolvedor, Maker e Engenheiro de Dados</h2>
+    <h1>Olá, eu sou o Cadu</h1>
+    <h2>Desenvolvedor, Maker e Engenheiro de Dados</h2>
+</div>
+<div class="row" id="card-about">
+    <div class="card column justify-around shadow body-bg" id="about-card">
+        <div class="row justify-between">
+            <blockquote>
+                <p class="flow-text">Cadu Magalhães</p>
+            </blockquote>
+            <blockquote>
+                <p class="flow-text">24 anos</p>
+            </blockquote>
+            <blockquote>
+                <p class="flow-text">Data Engineer</p>
+            </blockquote>
         </div>
-        <div class="row" id="card-about">
-            <div class="card column justify-around shadow body-bg" id="about-card">
-                <div class="row justify-between">
-                    <blockquote>
-                        <p class="flow-text">Cadu Magalhães</p>
-                    </blockquote>
-                    <blockquote>
-                        <p class="flow-text">24 anos</p>
-                    </blockquote>
-                    <blockquote>
-                        <p class="flow-text">Data Engineer</p>
-                    </blockquote>
-                </div>
-                <div class="row align-between">
-                    <div class="foto">
-                        <img class="profile" src="./img/me.webp" alt="my picture" width="210" height="210"
-                            loading="lazy">
-                    </div>
-                    <div class="descricao">
-                        <p class="flow-text">
-                            Sou um nerd estudante de Microeletrônica, amante de ciências e apaixonado por desafios.
-                            Por isso sou participante ativo de hackathons, onde atuo como dev e como ux,
-                            além de ter a habilidade de ficar acordado sem precisar de litros de energético.
-                            <br><br>No (pouco) tempo livre eu desenvolvo, estudo, leio e jogo videogame.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div>
-                        <a class="button btn-large shadow" href="#">Saiba mais</a>
-                    </div>
-
-                </div>
+        <div class="row align-between">
+            <div class="foto">
+                <img class="profile" src="/assets/img/me.webp" alt="my picture" width="210" height="210" loading="lazy">
+            </div>
+            <div class="descricao">
+                <p class="flow-text">
+                    Sou um nerd estudante de Microeletrônica, amante de ciências e apaixonado por desafios.
+                    Por isso sou participante ativo de hackathons, onde atuo como dev e como ux,
+                    além de ter a habilidade de ficar acordado sem precisar de litros de energético.
+                    <br><br>No (pouco) tempo livre eu desenvolvo, estudo, leio e jogo videogame.
+                </p>
             </div>
         </div>
         <div class="row">
-            <div class="column justify-around body-bg" id="projects-card">
-                <div class="row center">
-                    <h2>Alguns dos meus projetos</h2>
-                </div>
-                <div class="carousel-wrapper column">
-
-                    <input type="radio" name="position" value="project1" />
-                    <input type="radio" name="position" value="project2" />
-                    <input type="radio" name="position" value="project3" checked />
-                    <input type="radio" name="position" value="project4" />
-                    <input type="radio" name="position" value="project5" />
-
-                    <div class="row">
-                        <div class="arrow">
-                            <a class="prev" onclick="navSlide(-1)">&#10094;</a>
-                        </div>
-                        <div class="card-carousel">
-                        </div>
-
-                        <div class="arrow">
-                            <a class="next" onclick="navSlide(1)">&#10095;</a>
-                        </div>
-                    </div>
-                </div>
+            <div>
+                <a class="button btn-large shadow" href="/sobre/">Saiba mais</a>
             </div>
-        </div>
-    </main>
 
-    <footer class="footer column primary-color shadow">
-        <div class="container">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="column justify-around body-bg" id="projects-card">
+        <div class="row center">
+            <h2>Alguns dos meus projetos</h2>
+        </div>
+        <div class="carousel-wrapper column">
+
+            <input type="radio" name="position" value="project1" />
+            <input type="radio" name="position" value="project2" />
+            <input type="radio" name="position" value="project3" checked />
+            <input type="radio" name="position" value="project4" />
+            <input type="radio" name="position" value="project5" />
+
             <div class="row">
-                <div class="">
-                    <img src="./img/icon_white_shadow.webp" alt="cadumagalhaes logo" width="50" height="50">
+                <div class="arrow">
+                    <a class="prev" onclick="navSlide(-1)">&#10094;</a>
                 </div>
-                <div class="social">
-                    <a href="https://www.instagram.com/1cadumagalhaes" aria-label="instagram"><em
-                            class="icon fab fa-instagram"></em></a>
-                    <a href="https://www.twitter.com/1cadumagalhaes" aria-label="twitter"><em
-                            class="icon fab fa-twitter"></em></a>
-                    <a href="https://www.github.com/1cadumagalhaes" aria-label="github"><em
-                            class="icon fab fa-github"></em></a>
-                    <a href="https://www.linkedin.com/in/1cadumagalhaes" aria-label="linkedin"><em
-                            class="icon fab fa-linkedin"></em></a>
-                    <a href="https://www.twitch.tv/1cadumagalhaes" aria-label="twitch"><em
-                            class="icon fab fa-twitch"></em></a>
-                    <!--<a href="https://www.youtube.com/1cadumagalhaes" aria-label="youtube"><em
-                            class="icon fab fa-youtube"></em></a>-->
-                    <a href="https://www.medium.com/@1cadumagalhaes" aria-label="medium"><em
-                            class="icon fab fa-medium"></em></a>
-                    <a href="https://ko-fi.com/1cadumagalhaes" aria-label="ko-fi buy me a coffee"><em
-                            class="icon fa fa-coffee"></em></a>
+                <div class="card-carousel">
                 </div>
-            </div>
-            <div class="copyright">
-                <p>
-                    <a href="http://github.com/1cadumagalhaes" style="text-decoration: none;">@1cadumagalhaes</a>
-                    &nbsp; &nbsp; &nbsp;
-                <p id="year">2020</p>
-                </p>
 
+                <div class="arrow">
+                    <a class="next" onclick="navSlide(1)">&#10095;</a>
+                </div>
             </div>
         </div>
-    </footer>
-    <script src="js/navbar.js">
-    </script>
-    <script src="js/main.js">
-    </script>
-    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        onload="this.rel='stylesheet'" />
-    <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,latin-ext&display=swap"
-        onload="this.rel='stylesheet'">
-
-    <script src="./js/carousel.js">
-    </script>
-</body>
-
-</html>
+    </div>
+</div>

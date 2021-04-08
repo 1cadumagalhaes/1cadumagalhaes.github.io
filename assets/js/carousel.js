@@ -35,7 +35,6 @@ var projects = {
 }
 
 function renderProjects() {
-    console.log(projects);
     //var info = { title: 'Projeto ', img: 'https://1cadumagalhaes.github.io/img/me.jpeg', desc: 'lorem ipsum lorema asdasdlasda', url: '#' };
     projects.data.forEach(function (info, index) {
         var card = createProjectCard(index + 1, info.name, info.img, info.desc, info.url);
@@ -50,7 +49,7 @@ function createProjectCard(index, title, img, desc, url) {
             <h2>${title}</h2>
         </div>
         <div class="card-image">
-            <img class="profile" src="./img/${img}"
+            <img class="profile" src="/assets/img/${img}"
                 alt="my picture" width="210" height="210" loading="lazy">
         </div>
         <div class="card-desc">

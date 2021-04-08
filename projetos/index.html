@@ -1,0 +1,45 @@
+---
+title: Projetos
+layout: default
+customcss: sim
+css: projects
+---
+<section class="column">
+    <h2>
+        Alguns projetos
+    </h2>
+    <div class="projects-container">
+
+        {% for repository in site.github.public_repositories%}
+        {% if repository.has_pages and repository.name!="1cadumagalhaes.github.io" and repository.name!="blog"%}
+        <a href="{{repository.homepage}}">
+            <div class="card column justify-around shadow body-bg">
+                <div class="row">
+                    <figure>
+                        <img src='https://github.com/{{ repository.owner.login }}/{{ repository.owner.login }}/raw/main//public/img/{{repository.name}}.png'
+                            alt="logo" class="card-logo" height="100px" />
+                    </figure>
+                </div>
+                <div class="row">
+                    <h3 class="card-title">{{repository.name}}</h3>
+                </div>
+                <div class="row">
+                    <img alt="GitHub stars"
+                        src="https://img.shields.io/github/stars/{{site.github_username}}/{{repository.name}}?style=social" />
+                    <img alt="GitHub forks"
+                        src="https://img.shields.io/github/forks/{{site.github_username}}/{{repository.name}}?style=social" />
+                </div>
+                <div class="row">
+                    <p class="card-subtitle">{{repository.description }}</p>
+                </div>
+
+                <div class="actions">
+                    <div class="action-buttons">
+                        <em class="fa fa-arrow-right"></em>
+                    </div>
+                </div>
+            </div>
+        </a>
+        {% endif %} {% endfor %}
+    </div>
+</section>
