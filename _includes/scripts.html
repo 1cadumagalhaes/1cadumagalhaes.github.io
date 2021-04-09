@@ -1,6 +1,6 @@
-<script src="/assets/js/navbar.js">
+<script async src="/assets/js/navbar.js">
 </script>
-<script src="/assets/js/main.js">
+<script defer src="/assets/js/main.js">
 </script>
 <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     onload="this.rel='stylesheet'" />
@@ -9,5 +9,5 @@
     onload="this.rel='stylesheet'">
 
 {% if page.customjs=="sim" %}
-<script src="/assets/js/{{ page.js }}.js"></script>
+<script defer src="/assets/js/{{ page.js }}.js"></script>
 {% endif %}
