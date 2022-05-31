@@ -15,11 +15,11 @@
             {% assign path = "" %}
             {% endif %}
             <ul class="nav row" id="topnav">
-                <li><a href={ "/" | prepend: path }>Home</a></li>
-                <li><a href={ "/projetos/" | prepend: path }>Projetos</a></li>
-                <li><a href={ "/sobre/" | prepend: path }>Sobre</a></li>
+                <li><a href="{ '/' | prepend: path }"">Home</a></li>
+                <li><a href="{ '/projetos/'' | prepend: path }">Projetos</a></li>
+                <li><a href="{ '/sobre/' | prepend: path }">Sobre</a></li>
                 <li><a href="https://blog.cadumagalhaes.dev">Blog</a></li>
-                <li><a href={ "/contato/" | prepend: path }>Contato</a></li>
+                <li><a href="{ '/contato/' | prepend: path }">Contato</a></li>
                 <li><a href="https://work.cadumagalhaes.dev">Curriculo</a></li>
                 <li>
                     <span>
