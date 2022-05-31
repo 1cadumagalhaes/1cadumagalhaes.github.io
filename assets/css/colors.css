@@ -1,13 +1,13 @@
 :root {
     --body-bg: #f9f9f9;
-    --primary: #1976d2;
-    --light: #63a4ff;
-    --dark: #004ba0;
+    --primary: #292929;
+    --light: #515151;
+    --dark: #000000;
     --text-on-color: #fff;
     --text-on-body: #000;
     --shadow: #0000002d;
     --card: #f9f9f9;
-    --banner: #63a4ff;
+    --banner: #515151;
 }
 .dark-mode:root {
     --body-bg: #121212;
@@ -19,7 +19,7 @@
     --dark-nav: #292929;
     --card: #292929;
     --shadow: #cccccc0f;
-    --banner: #63a4ff;
+    --banner: #515151;
 }
 
 /*colors*/
