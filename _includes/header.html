@@ -8,15 +8,11 @@
             <a href="/">
                 <h1 class="logo">1cadumagalhaes</h1>
             </a>
-            {% if site.url == contains "blog" %}
+            {% if site.url contains "blog" %}
             {% assign path = "https://cadumagalhaes.dev" %}
             {% else %}
             {% assign path = "" %}
             {% endif %}
-            <div style="display: none;">
-                {{path}}
-                {{site.url}}
-            </div>
             <ul class="nav row" id="topnav">
                 <li><a href={{ "/" | prepend: path }}>Home</a></li>
                 <li><a href={{ '/projetos/' | prepend: path }}>Projetos</a></li>
