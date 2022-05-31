@@ -21,7 +21,7 @@
 title: 1cadumagalhaes
 email: contato@cadumagalhaes.dev
 description: >- # this means to ignore newlines until "baseurl:"
-    "Aqui você encontrará meus projetos e alguns conteúdos relacionados a tecnologia."
+    Aqui você encontrará meus projetos e alguns conteúdos relacionados a tecnologia.
 baseurl: '/' # the subpath of your site, e.g. /blog
 url: 'https://cadumagalhaes.dev' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 1cadumagalhaes

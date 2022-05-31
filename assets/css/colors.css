@@ -8,6 +8,8 @@
     --shadow: #0000002d;
     --card: #f9f9f9;
     --banner: #515151;
+    --tag: #6d9dcc;
+    --inactive: #f2f2f2;
 }
 .dark-mode:root {
     --body-bg: #121212;
@@ -20,6 +22,7 @@
     --card: #292929;
     --shadow: #cccccc0f;
     --banner: #515151;
+    --inactive: #515151;
 }
 
 /*colors*/
