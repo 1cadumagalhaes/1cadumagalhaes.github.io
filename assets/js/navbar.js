@@ -1,4 +1,3 @@
-var darkmodestate = false
 function touchHandler(selector, type, callback) {
     var el = $(selector), swipedir, dist, startX;
     el.addEventListener('touchstart', function (e) {
@@ -32,5 +31,6 @@ function responsive() {
 function darkMode() {
     toggleClass(document.documentElement, 'dark-mode');
     darkmodestate = !darkmodestate;
-    window.localStorage.setItem('dark-mode', darkmodestate)
+    window.localStorage.setItem('dark-mode', darkmodestate);
+    window.dataLayer.push({user:{darkmode:darkmodestate}});
 }

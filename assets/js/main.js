@@ -1,3 +1,5 @@
+var darkmodestate = false;
+var darkmode = window.localStorage.getItem('dark-mode')
 var $ = function (...args) {
     var t = document.querySelectorAll(...args);
     if (t.length == 1) return t[0];
@@ -26,8 +28,7 @@ function navSlide(value = 1, auto = false) {
 }
 
 document.addEventListener("DOMContentLoaded", function (event) {
-
-    var darkmode = window.localStorage.getItem('dark-mode');
+    //var darkmode = window.localStorage.getItem('dark-mode');
     if (darkmode === null) {
         window.localStorage.setItem('dark-mode', darkmodestate);
     }
