@@ -9,12 +9,17 @@
                 <h1 class="logo">1cadumagalhaes</h1>
             </a>
             <div></div>
+            {% if site.url == contains "blog" %}
+            {% assign path = "https://cadumagalhaes.dev" %}
+            {% else %}
+            {% assign path = "" %}
+            {% endif %}
             <ul class="nav row" id="topnav">
-                <li><a href="/">Home</a></li>
-                <li><a href="/projetos/">Projetos</a></li>
-                <li><a href="/sobre/">Sobre</a></li>
+                <li><a href={ "/" | prepend: path }>Home</a></li>
+                <li><a href={ "/projetos/" | prepend: path }>Projetos</a></li>
+                <li><a href={ "/sobre/" | prepend: path }>Sobre</a></li>
                 <li><a href="https://blog.cadumagalhaes.dev">Blog</a></li>
-                <li><a href="/contato/">Contato</a></li>
+                <li><a href={ "/contato/" | prepend: path }>Contato</a></li>
                 <li><a href="https://work.cadumagalhaes.dev">Curriculo</a></li>
                 <li>
                     <span>
@@ -34,8 +39,4 @@
         </div>
 
     </nav>
-    <div style="display: none;">
-        {{site.url}}
-        {{page.url}}
-    </div>
 </header>
